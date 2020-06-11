@@ -12,7 +12,8 @@
 
 
 ## DOCS
- - [documentation](https://laravel-livewire.com/docs/file-uploads)
+ - [File uploads](https://laravel-livewire.com/docs/file-uploads)
+ - [Quickstart](https://laravel-livewire.com/docs/quickstart)
 
 
 ## License
