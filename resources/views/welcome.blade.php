@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
         <title>Laravel</title>
         <style>
                 span{
@@ -11,27 +11,16 @@
                 }
         </style>
         @livewireStyles
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        
     </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
+    <body class="bg-gray-600 flex justify-center items-center h-screen">
+        <div class="w-2/3 flex flex-col bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="bg-gray-200 text-gray-700 text-lg px-6 py-4">Basic File Upload</div>
+            
+            <div class="px-6 py-4 border-t border-gray-200">
+                <div class="border rounded-lg p-4 bg-gray-200">
+                   @livewire('students-controller')
                 </div>
-            @endif
-
-            <div class="content">
-              @livewire('students-controller')
             </div>
         </div>
         @livewireScripts
