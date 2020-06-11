@@ -13,7 +13,8 @@
 
 ## DOCS
  - [File uploads](https://laravel-livewire.com/docs/file-uploads)
- - [Quickstart](https://laravel-livewire.com/docs/quickstart)
+ - [Laravel-Livewire Quickstart](https://laravel-livewire.com/docs/quickstart)
+ - [Laravel](https://laravel.com/)
 
 
 ## License
