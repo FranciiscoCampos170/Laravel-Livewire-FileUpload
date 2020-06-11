@@ -2,7 +2,7 @@
 ## Basic File Upload (Laravel Livewire)
 
 ## Setup
-
+- Clone the repository ``git clone https://github.com/FranciiscoCampos170/Laravel-Livewire-FileUpload.git``
 - Run ``composer install``
 - Run ``composer require livewire/livewire``
 - Run ``cp -r .env.example .env && php artisan key:generate``
