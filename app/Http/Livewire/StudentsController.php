@@ -35,7 +35,9 @@ class StudentsController extends Component
 
     public function render()
     {
-        return view('livewire.students-controller');
+        return view('livewire.students-controller', [
+            'students' => Student::all(),
+        ]);
     }
 
 }
