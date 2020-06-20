@@ -11,5 +11,25 @@
     </form>
 </div>
 
-<div>
+<div class="mt-12">
+    <table class="table-auto">
+  <thead>
+    <tr>
+      <th class="px-4 py-2">Name</th>
+      <th class="px-4 py-2">Email</th>
+      <th class="px-4 py-2">Photo</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach ($students as $student)
+    <tr class="bg-gray-100">
+      <td class="border px-4 py-2">{{$student->name}}</td>
+      <td class="border px-4 py-2">{{$student->email}}</td>
+      <td class="border px-4 py-2"><img src="{{asset('storage/photos/' . $student->photo)}}" alt="{{$student->name}}" srcset=""></td>
+    </tr>
+    @endforeach
+  </tbody>
+</table>
+    
+</div>
 
